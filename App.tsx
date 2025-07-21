@@ -1,14 +1,11 @@
-import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import {View, Text, Button} from 'react-native';
 
-const Halua = () => {
+export const FlowEntryScreen = ({onComplete}: {onComplete: () => void}) => {
   return (
-    <View style={{backgroundColor: 'red', marginTop: 100}}>
-      <Text>Halua</Text>
+    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <Text>Welcome to the SDK Flow</Text>
+      <Button title="Done" onPress={onComplete} />
     </View>
   );
 };
-
-export default Halua;
-
-const styles = StyleSheet.create({});
