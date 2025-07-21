@@ -3,7 +3,7 @@ import React from 'react';
 
 const Halua = () => {
   return (
-    <View style={{backgroundColor: 'red'}}>
+    <View style={{backgroundColor: 'red', marginTop: 100}}>
       <Text>Halua</Text>
     </View>
   );
